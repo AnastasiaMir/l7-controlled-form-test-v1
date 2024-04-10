@@ -70,12 +70,12 @@ export default () => {
       name: state.values.name,
       email: state.values.email,
     })
-    .then((res) => {
-      document.body.innerHTML = `<p>${res.data.message}</p>`;
-      console.log(res);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+      .then((res) => {
+        document.body.innerHTML = `<p>${res.data.message}</p>`;
+        console.log(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   });
 };
